@@ -83,12 +83,13 @@
       @include media("<=tablet"){
         position:relative;
         top: 0;
+        margin: 10rem 0;
         
       }
     }
 
     &:hover .dropdown-menu {
-      display: flex;
+        display: flex;
     }
 
     .dropdown-menu[style*="display: block"],
