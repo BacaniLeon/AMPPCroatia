@@ -1,0 +1,23 @@
+@use 'sass:map';
+@import '../../node_modules/include-media/dist/_include-media.scss';
+@import url('../styles/pages/_index.scss');
+@import url('../styles/pages/_shared.scss');
+@import url('../styles/pages/_navigation.scss');
+@import url('../styles/pages/_footer.scss');
+
+body {
+  font-size: 16rem;
+}
+
+// Korisiti brojeve bez px, %, itd.
+$designViewportWidths: (
+  mobile: 375,
+  largeDesktop: 1440
+);
+
+html {
+  font-size: calc(100vw / #{map.get($designViewportWidths, 'largeDesktop')});
+  @include media('<=tablet') {
+    font-size: calc(100vw / #{map.get($designViewportWidths, 'mobile')});
+  }
+}

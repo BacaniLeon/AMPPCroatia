@@ -1,0 +1,54 @@
+@import '../../../node_modules/include-media/dist/_include-media.scss';
+html{
+    
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display',serif;
+    body{
+        margin:0;
+        font-family: 'Playfair Display',serif;
+    }
+
+    
+}
+
+h1{
+    color: white;
+    font-weight: 200;
+    font-family: 'Playfair Display',serif;
+    margin: 0;
+    font-size: 60rem;
+    font-weight: bold;
+}
+
+h4{
+    color: #2fc1ff;
+    font-weight: 200;
+    font-family: 'Playfair Display',serif;
+    font-size: 16rem;
+    margin: 0 0 15rem;
+    font-weight: bold;
+}
+
+a{
+    font-family: 'Playfair Display',serif;
+    font-weight: bold;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.backToTop{
+    position: fixed;
+    left: 50%;
+    right: 0;
+    bottom: 2%;
+    transform: translateX(-50%);
+    width: 30rem;
+    height: 30rem;
+    z-index: 100;
+    @include media('<=tablet'){
+        width: 25rem;
+        height: 25rem;
+    }
+}

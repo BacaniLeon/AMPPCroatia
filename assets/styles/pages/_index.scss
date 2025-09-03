@@ -1,0 +1,34 @@
+@import '../../../node_modules/include-media/dist/_include-media.scss';
+
+
+
+.intro_banner {
+    max-width: 80%;
+    margin: 0 auto ;
+    padding: 100rem 0;
+    @include media("<=tablet"){
+        max-width: 400rem;
+        margin: 0 auto;
+    }
+    .slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    }
+
+    .img__ForHomePage {
+    width: 100%;
+    height: auto;
+    display: block;
+
+  transition: transform 0.5s ease;
+}
+
+.slide-inner:hover .img__ForHomePage {
+  transform: scale(1.05);
+}
+}
+
+
+
