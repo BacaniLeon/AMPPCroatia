@@ -10,8 +10,11 @@
     </div>
         <ul>
             <li class="dropdown">
+                <div style="display: flex">
                 <NuxtLink to="/" @click="changeOverflow()" no-prefetch>AMPP CROATIA</NuxtLink>
                 <span class="dropdown-toggle">▼</span>
+                </div>
+                
                 <ul class="dropdown-menu">
                 <li><NuxtLink to="/">Our Mission</NuxtLink></li>
                 <li><NuxtLink to="/">Board</NuxtLink></li>
@@ -23,8 +26,10 @@
             </li>
 
             <li class="dropdown">
-                <NuxtLink to="/" @click="changeOverflow()" no-prefetch>WORKING GROUPS</NuxtLink>
-                <span class="dropdown-toggle">▼</span>
+                <div style="display: flex">
+                    <NuxtLink to="/" @click="changeOverflow()" no-prefetch>WORKING GROUPS</NuxtLink>
+                    <span class="dropdown-toggle">▼</span>
+                </div>
                 <ul class="dropdown-menu">
                 <li><NuxtLink to="/">Oil & Gas</NuxtLink></li>
                 <li><NuxtLink to="/">Cathodic Protection</NuxtLink></li>
@@ -33,8 +38,10 @@
             </li>
 
             <li class="dropdown">
-                <NuxtLink to="/" @click="changeOverflow()" no-prefetch>WORKSHOP AND FAIRS</NuxtLink>
-                <span class="dropdown-toggle">▼</span>
+                <div style="display: flex">
+                    <NuxtLink to="/" @click="changeOverflow()" no-prefetch>WORKSHOP AND FAIRS</NuxtLink>
+                    <span class="dropdown-toggle">▼</span>
+                </div>
                 <ul class="dropdown-menu">
                 <li><NuxtLink to="/">2026</NuxtLink></li>
                 </ul>
@@ -57,8 +64,10 @@
             </li>
 
             <li class="dropdown">
+                <div style="display: flex">
                 <NuxtLink to="/" @click="changeOverflow()" no-prefetch>CONFERENCES & EXPO</NuxtLink>
                 <span class="dropdown-toggle">▼</span>
+                </div>
                 <ul class="dropdown-menu">
                 <li><NuxtLink to="/">2025</NuxtLink></li>
                 </ul>

@@ -7,7 +7,6 @@
     margin: 0 auto ;
     padding: 100rem 0;
     @include media("<=tablet"){
-        max-width: 400rem;
         margin: 0 auto;
     }
     .slide-inner {
