@@ -1,6 +1,5 @@
 @import '../../../node_modules/include-media/dist/_include-media.scss';
-
-
+$special-red: #ee2737;
 
 .intro_banner {
     max-width: 80%;
@@ -29,5 +28,151 @@
 }
 }
 
+.paragraphs_under_intro_banner{
+  width: 80%;
+  margin: 0 auto 50rem;
+  display: flex;
+  gap: 50rem;
+}
+
+.welcome_to_ampp{
+  width: 50%;
+  h2{
+    font-size: 28rem;
+    border-left: 4rem solid red;
+    padding: 0 0 0 20rem;
+    font-weight: 100;
+  }
+  p{
+    font-size: 16rem;
+    margin: 0 0 50rem;
+  }
+}
+
+.our_mission{
+  width: 50%;
+  h2{
+    font-size: 28rem;
+    border-left: 4rem solid $special-red;
+    padding: 0 0 0 20rem;
+    font-weight: 100;
+  }
+  p{
+    font-size: 16rem;
+    margin: 0 0 50rem;
+  }
+}
+
+.find_out_more_button{
+  display: inline-block;
+  color: black;
+  background-color: white;
+  padding:10rem 15rem;
+  text-decoration: none;
+  border: 2rem solid $special-red;
+  border-radius: 8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: $special-red;
+    transition: 1s;
+    transform: translateX(-3rem);
+    box-shadow: 0 4rem 10rem rgba(0,0,0,0.15);
+  }
+}
+
+.board_and_student_chapter_pictures{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 50rem;
+  border-bottom: 3rem solid $special-red;
+  padding: 0 0 50rem;
+}
+
+.board , .student_chapter{
+  background-image: url("https://a.storyblok.com/f/286902983623857/480x270/fe6a24c267/board.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.377); 
+  background-blend-mode: darken;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:300rem;
+  h1{
+    color: white;
+    font-size: 30rem;
+    font-weight: bolder;
+  }
+  p{
+    display: none;
+  }
+  .find_out_more_button{
+    display: none;
+    background-color: transparent;
+  }
+  &:hover{
+    background-color: rgba(255, 0, 0, 0.164); 
+    background-blend-mode:color-burn;
+    transition: 1s;
+    P{
+      display: block;
+      color: white;
+      font-size: 14rem;
+    }
+    .find_out_more_button{
+      display: block;
+      color: white;
+      border: 2rem solid white;
+      margin: 30rem 0 0;
+      &:hover{
+        background-color: $special-red;
+        border: 2rem solid $special-red;
+      }
+    }
+  }
+}
+
+.find_out_more_button_decoration{
+  display: inline-block;
+  color: white;
+  background-color: $special-red;
+  padding:5rem 13rem;
+  text-decoration: none;
+  border: 3rem solid $special-red;
+  text-decoration: none;
+  margin: 0 142.5rem;
+  font-size: 20rem;
+}
+
+.student_chapter{
+  background-image: url("https://a.storyblok.com/f/286902983623857/480x270/6cce8c6c17/student.jpg");
+}
+
+.find_out_more_banner{
+  width: 80%;
+  margin: 50rem auto;
+}
+
+.splideDiv_see_more{
+  width: 100%;
+
+}
+
+.slide-inner-see_more{
+  display: block;
+  width: 90%;
+  margin: 0 10rem;
+  text-decoration: none;
+  color: black;
+  img{
+    width: 100%;
+    height: auto;
+  };
+}
 
 

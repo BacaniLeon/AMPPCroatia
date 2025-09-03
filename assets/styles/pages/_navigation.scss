@@ -1,5 +1,7 @@
 @import '../../../node_modules/include-media/dist/_include-media.scss';
 
+$special-red: #ee2737;
+
 .navBar {
   width: 100%;
   margin: auto;
@@ -107,12 +109,12 @@
   }
 
   a:hover {
-    border-bottom: 1rem solid #ee2737;
+    border-bottom: 1rem solid $special-red;
     transition: 0.1s;
   }
 
   a.router-link-exact-active {
-    color: #ee2737;
+    color: $special-red;
   }
 
   .navBar__Menu {
