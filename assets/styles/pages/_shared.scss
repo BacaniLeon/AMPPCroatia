@@ -54,3 +54,9 @@ p{
         height: 25rem;
     }
 }
+
+.splide__pagination{
+    @include media("<=tablet"){
+        bottom: 0em !important;
+    }
+}

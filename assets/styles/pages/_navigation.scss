@@ -90,9 +90,12 @@ $special-red: #ee2737;
       }
     }
 
-    &:hover .dropdown-menu {
+      @include media(">=tablet"){
+          &:hover .dropdown-menu {
         display: flex;
-    }
+        }
+        }
+    
 
     .dropdown-menu[style*="display: block"],
     .dropdown-menu[style*="display: flex"] {
