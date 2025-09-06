@@ -11,17 +11,18 @@
         <ul>
             <li class="dropdown">
                 <div style="display: flex">
-                <NuxtLink to="/" @click="changeOverflow()" no-prefetch>AMPP CROATIA</NuxtLink>
+                <NuxtLink to="/ampp-croatia" @click="changeOverflow()" no-prefetch>AMPP CROATIA</NuxtLink>
                 <span class="dropdown-toggle">▼</span>
                 </div>
                 
                 <ul class="dropdown-menu">
-                <li><NuxtLink to="/">Our Mission</NuxtLink></li>
-                <li><NuxtLink to="/">Board</NuxtLink></li>
-                <li><NuxtLink to="/">Professional Ethics</NuxtLink></li>
-                <li><NuxtLink to="/">Courses and Certifications</NuxtLink></li>
-                <li><NuxtLink to="/">Awards</NuxtLink></li>
-                <li><NuxtLink to="/">Members Area</NuxtLink></li>
+                <li><NuxtLink to="/ampp-croatia/ampp-croatia-chapter">AMPP Croatia Chapter</NuxtLink></li>
+                <li><NuxtLink to="/ampp-croatia/our-mission">Our Mission</NuxtLink></li>
+                <li><NuxtLink to="/ampp-croatia/board">Board</NuxtLink></li>
+                <li><NuxtLink to="/ampp-croatia/professional-ethics">Professional Ethics</NuxtLink></li>
+                <li><NuxtLink to="/ampp-croatia/courses-and-certifications">Courses and Certifications</NuxtLink></li>
+                <li><NuxtLink to="/ampp-croatia/awards">Awards</NuxtLink></li>
+                <li><NuxtLink to="/ampp-croatia/members">Members Area</NuxtLink></li>
                 </ul>
             </li>
 

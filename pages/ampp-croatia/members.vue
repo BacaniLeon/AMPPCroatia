@@ -2,20 +2,6 @@
   <BackToTop />
   <Navigation />
 
-  <div class="intro_banner">
-    <div class="splideDiv">
-      <Splide
-        :options="splideOptions"
-        aria-label="Homepage Banner"
-      >
-        <SplideSlide v-for="(photo, index) in photos" :key="index">
-          <div class="slide-inner">
-            <img class="img__ForHomePage" :src="photo.url" :alt="'cert-' + index" />
-          </div>
-        </SplideSlide>
-      </Splide>
-    </div>
-  </div>
 
   <div class="paragraphs_under_intro_banner">
     <div class="welcome_to_ampp">
@@ -124,11 +110,5 @@ const splideOptions2 = {
   rewind: true,
   arrows: false,
   pagination: true,
-  breakpoints: {
-    768: {
-      perPage: 1,
-    },
-  },
 };
-
 </script>

@@ -2,34 +2,6 @@
   <BackToTop />
   <Navigation />
 
-  <div class="intro_banner">
-    <div class="splideDiv">
-      <Splide
-        :options="splideOptions"
-        aria-label="Homepage Banner"
-      >
-        <SplideSlide v-for="(photo, index) in photos" :key="index">
-          <div class="slide-inner">
-            <img class="img__ForHomePage" :src="photo.url" :alt="'cert-' + index" />
-          </div>
-        </SplideSlide>
-      </Splide>
-    </div>
-  </div>
-
-  <div class="paragraphs_under_intro_banner">
-    <div class="welcome_to_ampp">
-      <h2>Welcome to AMPP CROATIA CHAPTER</h2>
-      <p><span style="color: #ee2737;">AMPP Croatia Chapter</span> it is a non-profit association of professionals who operate within Croatian territory with the aim of promoting the protection and performance of materials. AMPP Croatia Chapter represents the Croatian expression of an international reality AMPP Association for Materials Protection and Performance, based in Houston Texas and affiliated offices around the world. AMPP is the largest global community of corrosion and coating experts.</p>
-      <NuxtLink to="/" class="find_out_more_button">Find out more</NuxtLink>
-    </div>
-    <div class="our_mission">
-      <h2>Our Mission</h2>
-      <p>Protect and safeguard assets through education, certification, accreditation, innovation and standardization. We work to ensure that our members have access to the best resources available in the field of material and performance protection, helping to strengthen professional skills and promote best practices in the sector.</p>
-      <NuxtLink to="/" class="find_out_more_button">Find out more</NuxtLink>
-    </div>
-  </div>
-
   <div class="board_and_student_chapter_pictures">
     <div class="board">
       <h1>BOARD</h1>
@@ -124,11 +96,5 @@ const splideOptions2 = {
   rewind: true,
   arrows: false,
   pagination: true,
-  breakpoints: {
-    768: {
-      perPage: 1,
-    },
-  },
 };
-
 </script>

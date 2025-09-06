@@ -3,10 +3,12 @@ $special-red: #ee2737;
 
 .intro_banner {
     max-width: 80%;
-    margin: 0 auto ;
+    margin: 0 auto;
     padding: 100rem 0;
     @include media("<=tablet"){
         margin: 0 auto;
+        padding: 70rem 0 0;
+        margin: 0 auto 50rem;
     }
     .slide-inner {
     position: relative;
@@ -33,33 +35,57 @@ $special-red: #ee2737;
   margin: 0 auto 50rem;
   display: flex;
   gap: 50rem;
+  @include media("<=tablet"){
+    flex-direction: column;
+    margin: 0 auto 20rem;
+  }
 }
 
 .welcome_to_ampp{
   width: 50%;
+  @include media("<=tablet"){
+    width: 100%;
+  }
   h2{
     font-size: 28rem;
     border-left: 4rem solid red;
     padding: 0 0 0 20rem;
     font-weight: 100;
+    @include media("<=tablet"){
+      font-size: 22rem;
+    }
   }
   p{
     font-size: 16rem;
     margin: 0 0 50rem;
+    @include media("<=tablet"){
+      font-size: 14rem;
+      margin: 0 0 15rem;
+    }
   }
 }
 
 .our_mission{
   width: 50%;
+  @include media("<=tablet"){
+    width: 100%;
+  }
   h2{
     font-size: 28rem;
-    border-left: 4rem solid $special-red;
+    border-left: 4rem solid red;
     padding: 0 0 0 20rem;
     font-weight: 100;
+    @include media("<=tablet"){
+      font-size: 22rem;
+    }
   }
   p{
     font-size: 16rem;
     margin: 0 0 50rem;
+    @include media("<=tablet"){
+      font-size: 14rem;
+      margin: 0 0 15rem;
+    }
   }
 }
 
@@ -73,6 +99,10 @@ $special-red: #ee2737;
   border-radius: 8rem;
   text-decoration: none;
   transition: all 0.3s ease;
+  @include media("<=tablet"){
+    padding: 5rem 7rem;
+    font-size: 10rem;
+  }
   &:hover{
     background-color: $special-red;
     transition: 1s;
@@ -89,6 +119,11 @@ $special-red: #ee2737;
   gap: 50rem;
   border-bottom: 3rem solid $special-red;
   padding: 0 0 50rem;
+  @include media("<=tablet"){
+    flex-direction: column;
+    gap: 20rem;
+    padding: 0 0 20rem;
+  }
 }
 
 .board , .student_chapter{
@@ -103,10 +138,17 @@ $special-red: #ee2737;
   justify-content: center;
   align-items: center;
   height:300rem;
+  @include media("<=tablet"){
+    width: 100%;
+    height: 200rem;
+  }
   h1{
     color: white;
     font-size: 30rem;
     font-weight: bolder;
+    @include media("<=tablet"){
+    font-size: 24rem;
+  }
   }
   p{
     display: none;
@@ -116,13 +158,16 @@ $special-red: #ee2737;
     background-color: transparent;
   }
   &:hover{
-    background-color: rgba(255, 0, 0, 0.164); 
-    background-blend-mode:color-burn;
+    background-color: rgba(0, 0, 0, 0.856); 
+    background-blend-mode:darken;
     transition: 1s;
     P{
       display: block;
       color: white;
       font-size: 14rem;
+      @include media("<=tablet"){
+        font-size: 10rem;
+      }
     }
     .find_out_more_button{
       display: block;
@@ -147,6 +192,10 @@ $special-red: #ee2737;
   text-decoration: none;
   margin: 0 142.5rem;
   font-size: 20rem;
+  @include media("<=tablet"){
+    font-size: 14rem;
+    margin: 0 37rem;
+  }
 }
 
 .student_chapter{
@@ -156,11 +205,20 @@ $special-red: #ee2737;
 .find_out_more_banner{
   width: 80%;
   margin: 50rem auto;
+  @include media("<=tablet"){
+    margin: 20rem auto;
+  }
 }
 
 .splideDiv_see_more{
   width: 100%;
-
+  a{
+    transition: 1s;
+  }
+  a:hover{
+    scale: 1.05;
+    transition: 1s;
+  }
 }
 
 .slide-inner-see_more{
@@ -169,6 +227,17 @@ $special-red: #ee2737;
   margin: 0 10rem;
   text-decoration: none;
   color: black;
+  h2{
+    @include media("<=tablet"){
+            font-size: 16rem;
+        }
+  }
+  p{
+    font-weight: 100;
+    @include media("<=tablet"){
+            font-size: 10rem;
+        }
+  }
   img{
     width: 100%;
     height: auto;
