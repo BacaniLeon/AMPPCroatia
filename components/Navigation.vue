@@ -25,13 +25,17 @@
           <span class="dropdown-toggle" @click="toggleDropdown(1)">▼</span>
         </div>
         <ul class="dropdown-menu" :class="{ open: openDropdown === 1 }">
-          <li><NuxtLink to="/ampp-croatia/ampp-croatia-chapter">AMPP Croatia Chapter</NuxtLink></li>
-          <li><NuxtLink to="/ampp-croatia/our-mission">Our Mission</NuxtLink></li>
-          <li><NuxtLink to="/ampp-croatia/board">Board</NuxtLink></li>
-          <li><NuxtLink to="/ampp-croatia/professional-ethics">Professional Ethics</NuxtLink></li>
-          <li><NuxtLink to="/ampp-croatia/courses-and-certifications">Courses and Certifications</NuxtLink></li>
-          <li><NuxtLink to="/ampp-croatia/awards">Awards</NuxtLink></li>
-          <li><NuxtLink to="/ampp-croatia/members">Members Area</NuxtLink></li>
+          <li><NuxtLink to="/ampp-croatia/ampp-croatia-chapter" @click="changeOverflow()">AMPP Croatia Chapter</NuxtLink></li>
+          <li><NuxtLink to="/ampp-croatia/our-mission"
+          @click="changeOverflow()">Our Mission</NuxtLink></li>
+          <li><NuxtLink to="/ampp-croatia/board" 
+          @click="changeOverflow()">Board</NuxtLink></li>
+          <li><NuxtLink to="/ampp-croatia/professional-ethics" @click="changeOverflow()">Professional Ethics</NuxtLink></li>
+          <li><NuxtLink to="/ampp-croatia/courses-and-certifications" @click="changeOverflow()">Courses and Certifications</NuxtLink></li>
+          <li><NuxtLink to="/ampp-croatia/awards"
+          @click="changeOverflow()">Awards</NuxtLink></li>
+          <li><NuxtLink to="/ampp-croatia/members"
+          @click="changeOverflow()">Members Area</NuxtLink></li>
         </ul>
       </li>
 
@@ -42,9 +46,9 @@
           <span class="dropdown-toggle" @click="toggleDropdown(2)">▼</span>
         </div>
         <ul class="dropdown-menu" :class="{ open: openDropdown === 2 }">
-          <li><NuxtLink to="/">Oil & Gas</NuxtLink></li>
-          <li><NuxtLink to="/">Cathodic Protection</NuxtLink></li>
-          <li><NuxtLink to="/">Retiring</NuxtLink></li>
+          <li><NuxtLink to="/" @click="changeOverflow()">Oil & Gas</NuxtLink></li>
+          <li><NuxtLink to="/" @click="changeOverflow()">Cathodic Protection</NuxtLink></li>
+          <li><NuxtLink to="/" @click="changeOverflow()">Retiring</NuxtLink></li>
         </ul>
       </li>
 
@@ -55,7 +59,7 @@
           <span class="dropdown-toggle" @click="toggleDropdown(3)">▼</span>
         </div>
         <ul class="dropdown-menu" :class="{ open: openDropdown === 3 }">
-          <li><NuxtLink to="/">2026</NuxtLink></li>
+          <li><NuxtLink to="/" @click="changeOverflow()">2026</NuxtLink></li>
         </ul>
       </li>
 
@@ -86,7 +90,7 @@
           <span class="dropdown-toggle" @click="toggleDropdown(4)">▼</span>
         </div>
         <ul class="dropdown-menu" :class="{ open: openDropdown === 4 }">
-          <li><NuxtLink to="/">2025</NuxtLink></li>
+          <li><NuxtLink to="/" @click="changeOverflow()">2025</NuxtLink></li>
         </ul>
       </li>
 
