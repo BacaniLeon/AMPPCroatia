@@ -49,6 +49,7 @@ $special-red: #ee2737;
 }
 
 .board_members{
+    transition: 1s;
     width: 30%;
     margin: 0 0 50rem;
     @include media("<=tablet"){
