@@ -117,7 +117,6 @@ $special-red: #ee2737;
   display: flex;
   justify-content: center;
   gap: 50rem;
-  border-bottom: 3rem solid $special-red;
   padding: 0 0 50rem;
   @include media("<=tablet"){
     flex-direction: column;

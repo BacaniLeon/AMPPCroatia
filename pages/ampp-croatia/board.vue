@@ -2,33 +2,28 @@
   <BackToTop />
   <Navigation />
 
+  <div class="board_page_text">
+    <h1>Board</h1>
 
-  <div class="paragraphs_under_intro_banner">
-    <div class="welcome_to_ampp">
-      <h2>Welcome to AMPP CROATIA CHAPTER</h2>
-      <p><span style="color: #ee2737;">AMPP Croatia Chapter</span> it is a non-profit association of professionals who operate within Croatian territory with the aim of promoting the protection and performance of materials. AMPP Croatia Chapter represents the Croatian expression of an international reality AMPP Association for Materials Protection and Performance, based in Houston Texas and affiliated offices around the world. AMPP is the largest global community of corrosion and coating experts.</p>
-      <NuxtLink to="/" class="find_out_more_button">Find out more</NuxtLink>
-    </div>
-    <div class="our_mission">
-      <h2>Our Mission</h2>
-      <p>Protect and safeguard assets through education, certification, accreditation, innovation and standardization. We work to ensure that our members have access to the best resources available in the field of material and performance protection, helping to strengthen professional skills and promote best practices in the sector.</p>
-      <NuxtLink to="/" class="find_out_more_button">Find out more</NuxtLink>
-    </div>
+    <h2>AMPP Croatia Chapter is an organization led by its members, directed by a board responsible for guiding the association and ensuring that the needs of members and industry are met and for supporting and supervising the execution of the various initiatives.</h2>
+
+    <p>The board positions are elected by the AMPP members who are part of the AMPP Italy Chapter.</p>
+
+    <p>The board in office for this year consists of the following members:</p>
+  </div> 
+
+  <div class="board_members_div">
+    <div class="board_members" v-for="(board_member, index) in board_members" :key="index">
+    <img :src="board_member.photo" />
+    <h2>{{ board_member.title }}</h2>
+    <h1>{{ board_member.name }}</h1>
+    <p>{{ board_member.city }}</p>
+    <NuxtLink :to="board_member.to" class="find_out_more_button">{{ board_member.company }}</NuxtLink>
   </div>
-
-  <div class="board_and_student_chapter_pictures">
-    <div class="board">
-      <h1>BOARD</h1>
-      <p>Extending knowledge about corrosion and its prevention, attracting the attention of those with an education...</p>
-      <NuxtLink to="/" class="find_out_more_button">See more</NuxtLink>
-    </div>
-
-    <div class="student_chapter">
-      <h1>STUDENT CHAPTER</h1>
-      <NuxtLink to="/" class="find_out_more_button">See more</NuxtLink>
-    </div>
   </div>
-  <button class="find_out_more_button_decoration">Find out more</button>
+  
+  
+  <button class="find_out_more_button_decoration">See also</button>
   <div class="find_out_more_banner">
     <div class="splideDiv_see_more">
       <Splide
@@ -54,50 +49,43 @@
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 
-const photos = [
-  { url: "https://a.storyblok.com/f/286902983623857/1600x600/9f18d0ea37/banner_photo1.jpg" },
-  { url: "https://a.storyblok.com/f/286902983623857/1600x600/527acd0d1d/banner_photo2.jpg" },
-];
-
 const seeMore = [
   {
-     url: "https://a.storyblok.com/f/286902983623857/480x270/479e1a5bb5/sponsor.jpg",
-     title: "Sponsor & Exhibitors Prospectus",
-     paragraf: "4th Conference & Expo - Genoa 2026",
-     to: "/link"
+     url: "https://a.storyblok.com/f/286902983623857/480x360/b9c0216f68/ampp_croatia_chapter.jpg",
+     title: "AMPP Croatia Chapter",
+     paragraf: "",
+     to: "/ampp-croatia/ampp-croatia-chapter"
    },
   { 
-    url: "https://a.storyblok.com/f/286902983623857/480x270/ba640a0ff3/exhibiting.jpg",
-    title: "Who's Exhibiting?",
-    paragraf: "Take a closer look at the top players showing their solutions.",
-    to: "/link2"
-  },
-  { 
-    url: "https://a.storyblok.com/f/286902983623857/480x270/1253216aec/meetoursponsors.jpg",
-    title: "Meet Our Sponsor",
-    paragraf: "Discover the partners powering this event",
-    to: "/link3"
-  },
-  { 
-    url: "https://a.storyblok.com/f/286902983623857/480x270/7a1d277804/abstractt.jpg",
-    title: "Call for Abstract",
+    url: "https://a.storyblok.com/f/286902983623857/480x360/565e6307d0/our_mission.jpg",
+    title: "Our Mission",
     paragraf: "",
-    to: "/link4"
+    to: "/ampp-croatia/our-mission"
+  },
+  { 
+    url: "https://a.storyblok.com/f/286902983623857/480x360/4da830ff35/professional_ethics.jpg",
+    title: "Professional Ethics",
+    paragraf: "Discover the partners powering this event",
+    to: "/ampp-croatia/professiona-ethics"
+  },
+  { 
+    url: "https://a.storyblok.com/f/286902983623857/480x360/b7098180c4/courses_and_certifications.jpg",
+    title: "Courses and Certifications",
+    paragraf: "",
+    to: "/ampp-croatia/courses-and-certifications"
   },
 ];
 
-const splideOptions = {
-  type: 'loop',
-  perPage: 1,
-  autoplay: true,
-  interval: 5000,
-  pauseOnHover: true,
-  pauseOnFocus: true,
-  speed: 2000,
-  rewind: true,
-  arrows: true,
-  pagination: true,
-};
+const board_members = [
+  {
+     photo: "https://a.storyblok.com/f/286902983623857/404x325/2b171c682e/ampp_croatia_croatia.png",
+     title: "Chairman",
+     name: "John Doe",
+     city: "Zagreb",
+     to: "https://www.eninco-engineering.hr",
+     company: "Eninco Engineering"
+   },
+];
 
 const splideOptions2 = {
   type: 'loop',
@@ -110,5 +98,10 @@ const splideOptions2 = {
   rewind: true,
   arrows: false,
   pagination: true,
+  breakpoints: {
+    768: {
+      perPage: 1,
+    },
+  },
 };
 </script>

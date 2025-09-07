@@ -1,0 +1,75 @@
+@import '../../../node_modules/include-media/dist/_include-media.scss';
+$special-red: #ee2737;
+
+.board_page_text{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100rem 0 20rem;
+    @include media("<=tablet"){
+        padding: 60rem 0 20rem;
+    }
+    h1{
+        width: 10%;
+        color: black;
+        font-size: 40rem;
+        font-weight: 100;
+        border-bottom: 2rem $special-red solid;
+        @include media("<=tablet"){
+        width:55%;
+        font-size: 30rem;
+    }
+    }
+    h2{
+        font-size: 26rem;
+        font-weight: 100;
+        @include media("<=tablet"){
+        font-size: 20rem;
+    }
+    }
+    p{
+        font-size: 14rem;
+        font-weight: 100;
+        @include media("<=tablet"){
+        font-size: 12rem;
+    }
+    }
+}
+
+.board_members_div{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.board_members:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+
+.board_members{
+    width: 30%;
+    margin: 0 0 50rem;
+    @include media("<=tablet"){
+        width: 100%;
+    }
+    h1{
+        font-size: 30rem;
+        color: black;
+        font-weight: 100;
+
+    }
+    h2{
+        font-size: 24rem;
+        font-weight: 100;
+        color: $special-red;
+    }
+    p{
+        font-size: 18rem;
+        color: $special-red;
+    }
+    img{
+        width: 100%;
+    }
+}

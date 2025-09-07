@@ -68,10 +68,10 @@ const photos = [
 
 const seeMore = [
   {
-     photo: "https://a.storyblok.com/f/286902983623857/480x360/565e6307d0/our_mission.jpg",
+     photo: "https://a.storyblok.com/f/286902983623857/480x360/13203e5011/ampp.jpg",
      title: "AMPP",
      paragraf: "In March of 2019, NACE International, The Worldwide Corrosion Authority and SSPC",
-     to: "/ampp-croatia/our-mission"
+     to: "/ampp"
    },
   {
      photo: "https://a.storyblok.com/f/286902983623857/480x360/565e6307d0/our_mission.jpg",

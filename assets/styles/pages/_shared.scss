@@ -56,7 +56,18 @@ p{
 }
 
 .splide__pagination{
+    position: relative !important;
+    margin: 10rem 0 !important;
     @include media("<=tablet"){
         bottom: 0em !important;
     }
+}
+
+.splide__pagination__page{
+    margin: 3rem 5rem !important;
+}
+
+.splide__pagination__page.is-active{
+    background-color: $special-red !important;
+    scale: 1.3;
 }
