@@ -1,7 +1,7 @@
 <template>
   <nav :class="[{ navBar__MobileMenu: menuHidden }, 'navBar']">
     <div class="img_div">
-      <NuxtLink to="/" class="navBar__LogoLink" no-prefetch>
+      <NuxtLink to="/" class="navBar__LogoLink" no-prefetch @click="changeOverflow()">
         <img src="https://a.storyblok.com/f/286902983623857/1210x150/7bd62dc0e0/logo.png" class="LogoLink">
       </NuxtLink>
 
