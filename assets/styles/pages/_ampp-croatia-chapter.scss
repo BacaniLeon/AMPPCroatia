@@ -32,20 +32,21 @@ $special-red: #ee2737;
 
 .ampp_chapter_croatia_text{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 50rem;
     @include media("<=tablet"){
             margin: 0 auto 50rem;
         }
     h2{
         font-size: 22rem;
-        font-weight: 100;
+        font-weight: 600;
         @include media("<=tablet"){
             font-size: 16rem;
         }
     }
     p{
         font-size: 13rem;
-        line-height: 1.2;
+        line-height: 1.5;
+        font-weight: 400;
         @include media("<=tablet"){
             font-size: 9rem;
         }
@@ -72,6 +73,9 @@ $special-red: #ee2737;
     width: 100%;
     height: auto;
   };
+  p{
+    font-weight: 400;
+  }
 }
 
 

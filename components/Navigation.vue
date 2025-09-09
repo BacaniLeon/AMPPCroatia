@@ -42,13 +42,13 @@
       <!-- WORKING GROUPS -->
       <li class="dropdown">
         <div style="display: flex">
-          <NuxtLink to="/" @click="changeOverflow()" no-prefetch>WORKING GROUPS</NuxtLink>
+          <NuxtLink to="/working-groups" @click="changeOverflow()" no-prefetch>WORKING GROUPS</NuxtLink>
           <span class="dropdown-toggle" @click="toggleDropdown(2)">▼</span>
         </div>
         <ul class="dropdown-menu" :class="{ open: openDropdown === 2 }">
-          <li><NuxtLink to="/" @click="changeOverflow()">Oil & Gas</NuxtLink></li>
-          <li><NuxtLink to="/" @click="changeOverflow()">Cathodic Protection</NuxtLink></li>
-          <li><NuxtLink to="/" @click="changeOverflow()">Retiring</NuxtLink></li>
+          <li><NuxtLink to="/working-groups/oil-and-gas" @click="changeOverflow()">Oil & Gas</NuxtLink></li>
+          <li><NuxtLink to="/working-groups/cathordic-protection" @click="changeOverflow()">Cathodic Protection</NuxtLink></li>
+          <li><NuxtLink to="/working-groups/coating" @click="changeOverflow()">Coating</NuxtLink></li>
         </ul>
       </li>
 

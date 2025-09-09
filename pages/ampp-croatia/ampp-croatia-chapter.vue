@@ -36,6 +36,7 @@
       Encourage collaboration between operators on plants and structures in the joint solution of corrosion problems.</p>
     </div>
   
+  <button class="find_out_more_button_decoration">See also</button>
   <div class="find_out_more_banner">
     <div class="splideDiv_see_more">
       <Splide

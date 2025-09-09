@@ -2,33 +2,38 @@
   <BackToTop />
   <Navigation />
 
-
-  <div class="paragraphs_under_intro_banner">
-    <div class="welcome_to_ampp">
-      <h2>Welcome to AMPP CROATIA CHAPTER</h2>
-      <p><span style="color: #ee2737;">AMPP Croatia Chapter</span> it is a non-profit association of professionals who operate within Croatian territory with the aim of promoting the protection and performance of materials. AMPP Croatia Chapter represents the Croatian expression of an international reality AMPP Association for Materials Protection and Performance, based in Houston Texas and affiliated offices around the world. AMPP is the largest global community of corrosion and coating experts.</p>
-      <NuxtLink to="/" class="find_out_more_button">Find out more</NuxtLink>
-    </div>
-    <div class="our_mission">
-      <h2>Our Mission</h2>
-      <p>Protect and safeguard assets through education, certification, accreditation, innovation and standardization. We work to ensure that our members have access to the best resources available in the field of material and performance protection, helping to strengthen professional skills and promote best practices in the sector.</p>
-      <NuxtLink to="/" class="find_out_more_button">Find out more</NuxtLink>
-    </div>
+  <div class="professional_ethics_intro_banner">
+          <div class="slide-inner">
+            <img class="img__ForHomePage" src="https://a.storyblok.com/f/286902983623857/1600x600/3e9689c3c8/professional_ethics_withtext.jpg"/>
+          </div>
   </div>
 
-  <div class="board_and_student_chapter_pictures">
-    <div class="board">
-      <h1>BOARD</h1>
-      <p>Extending knowledge about corrosion and its prevention, attracting the attention of those with an education...</p>
-      <NuxtLink to="/" class="find_out_more_button">See more</NuxtLink>
+    <div class="professiona_ethics_text">
+      <h1>Professional Ethics</h1>
+
+
+      <h2>In recent years, AMPP has raised great awareness of the professional code of ethics, i.e. the responsibilities of ethical-social behavior as well as the principles that individual inspectors must adhere to during their work activity.</h2>
+
+      <h3>On the subject, the following were created</h3>
+
+      <p>
+      <img src="https://a.storyblok.com/f/286902983623857/512x512/d2f0928209/check-mark.png" />
+      a course, which is mandatory for those who need to renew or request a new certification, but is dedicated to everyone.</p>
+
+      <p>
+      <img src="https://a.storyblok.com/f/286902983623857/512x512/d2f0928209/check-mark.png" />
+      a committee made up of 11 professional members, to whom it is possible to send complaints about incorrect behavior or professional practices.</p>
+
+      <h4>Below you will find all the links on the topic.</h4>
     </div>
 
-    <div class="student_chapter">
-      <h1>STUDENT CHAPTER</h1>
-      <NuxtLink to="/" class="find_out_more_button">See more</NuxtLink>
-    </div>
+  <div class="links_to_the_topic">
+      <NuxtLink :to="link.to" v-for="(link,index) in links" :key="index"  class="links_to_the_topic_div">
+        <h2>{{ link.title }}</h2>
+      </NuxtLink>
   </div>
-  <button class="find_out_more_button_decoration">Find out more</button>
+  
+  <button class="find_out_more_button_decoration">See also</button>
   <div class="find_out_more_banner">
     <div class="splideDiv_see_more">
       <Splide
@@ -37,7 +42,7 @@
       >
         <SplideSlide v-for="(more, index) in seeMore" :key="index">
           <NuxtLink class="slide-inner-see_more" :to="more.to">
-            <img class="img__ForHomePage" :src="more.url" :alt="'cert-' + index" />
+            <img class="img__ForHomePage" :src="more.photo" :alt="'cert-' + index" />
             <h2> {{ more.title }}</h2>
             <p> {{ more.paragraf }}</p>
           </NuxtLink>
@@ -61,29 +66,48 @@ const photos = [
 
 const seeMore = [
   {
-     url: "https://a.storyblok.com/f/286902983623857/480x270/479e1a5bb5/sponsor.jpg",
-     title: "Sponsor & Exhibitors Prospectus",
-     paragraf: "4th Conference & Expo - Genoa 2026",
-     to: "/link"
+     photo: "https://a.storyblok.com/f/286902983623857/480x360/b9c0216f68/ampp_croatia_chapter.jpg",
+     title: "AMPP Croatia Chapter",
+     paragraf: "",
+     to: "/ampp-croatia/ampp-croatia-chapter"
    },
-  { 
-    url: "https://a.storyblok.com/f/286902983623857/480x270/ba640a0ff3/exhibiting.jpg",
-    title: "Who's Exhibiting?",
-    paragraf: "Take a closer look at the top players showing their solutions.",
-    to: "/link2"
-  },
-  { 
-    url: "https://a.storyblok.com/f/286902983623857/480x270/1253216aec/meetoursponsors.jpg",
-    title: "Meet Our Sponsor",
-    paragraf: "Discover the partners powering this event",
-    to: "/link3"
-  },
-  { 
-    url: "https://a.storyblok.com/f/286902983623857/480x270/7a1d277804/abstractt.jpg",
-    title: "Call for Abstract",
-    paragraf: "",
-    to: "/link4"
-  },
+  {
+     photo: "https://a.storyblok.com/f/286902983623857/480x360/565e6307d0/our_mission.jpg",
+     title: "Our Mission",
+     paragraf: "",
+     to: "/ampp-croatia/our-mission"
+   },
+  {
+     photo: "https://a.storyblok.com/f/286902983623857/480x360/0505aaa9a0/ampp_croatia_board.jpg",
+     title: "Board",
+     paragraf: "Extend knowledge about corrosion and its prevention, attracting the attention of those with appropriate education and specialization.",
+     to: "/ampp-croatia/board"
+   },
+  {
+     photo: "https://a.storyblok.com/f/286902983623857/480x360/b7098180c4/courses_and_certifications.jpg",
+     title: "Courses and Certifications",
+     paragraf: "",
+     to: "/ampp-croatia/courses-and-certifications"
+   },
+];
+
+const links = [
+  {
+     title: "Complaint form and ethics committee",
+     to: "https://www.ampp.org/resources/ethics-and-professional-practice"
+   },
+  {
+     title: "Professional Ethics Course",
+     to: "https://www.ampp.org/education/education-resources/courses-by-program/general-corrosion/ethics-for-the-corrosion-professional"
+   },
+   {
+     title: "Summary Code of Ethics",
+     to: "https://higherlogicdownload.s3.amazonaws.com/NACE/cedda8a4-c3c0-4583-b1b6-3b248e6eb1f2/UploadedImages/Membership/pdf/Code-of-Ethics.pdf"
+   },
+   {
+     title: "Information Code of Ethics AMPP",
+     to: "https://www.ampp.org/about/about-ampp/ampp-bylaws-and-governance"
+   },
 ];
 
 const splideOptions = {
@@ -110,5 +134,11 @@ const splideOptions2 = {
   rewind: true,
   arrows: false,
   pagination: true,
+  breakpoints: {
+    768: {
+      perPage: 1,
+    },
+  },
 };
+
 </script>

@@ -1,0 +1,103 @@
+@import '../../../node_modules/include-media/dist/_include-media.scss';
+$special-red: #ee2737;
+
+.working_groups_text{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100rem 0 50rem;
+    @include media("<=tablet"){
+            padding: 40rem 0rem 50rem;
+        }
+    h1{
+        width: 28%;
+        color: black;
+        font-size: 40rem;
+        font-weight: 400;
+        border-bottom: 2rem $special-red solid;
+        margin: 10rem 0 30rem;
+        @include media("<=tablet"){
+        width:55%;
+        font-size: 30rem;
+    }
+    }
+    h2{
+        font-size: 22rem;
+        font-weight: 600;
+        color: $special-red;
+        @include media("<=tablet"){
+            font-size: 16rem;
+        }
+    }
+    h3{
+        font-size: 26rem;
+        margin: 0;
+        padding: 70rem;
+        background-color: rgb(227, 227, 232);
+        text-align: center;
+        font-weight: 700;
+        @include media("<=tablet"){
+            font-size: 12rem;
+            padding: 20rem 40rem;
+        }
+    }
+    p{
+        font-size: 13rem;
+        line-height: 1.5;
+        font-weight: 400;
+        color: black;
+        @include media("<=tablet"){
+            font-size: 9rem;
+        }
+    }
+    span{
+        color:$special-red;
+        font-weight: 600;
+    }
+}
+
+.working_groups_links{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  @include media("<=tablet"){
+    flex-direction: column;
+  }
+  
+}
+
+.working_group_links_articles{
+    width: 30%;
+    transition: 1s;
+    margin: 0 0 50rem;
+    @include media("<=tablet"){
+        width: 100%;
+        margin: 0 0 20rem;
+    }
+    &:hover{
+    scale: 1.05;
+  }
+}
+
+.working_group_links_article{
+  text-decoration: none;
+  color: black;
+  transition: 1s;
+  h2{
+    @include media("<=tablet"){
+            font-size: 16rem;
+        }
+  }
+  p{
+    font-weight: 100;
+    @include media("<=tablet"){
+            font-size: 10rem;
+        }
+  }
+  img{
+    width: 100%;
+    height: auto;
+  };
+}
+
+

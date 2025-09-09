@@ -12,7 +12,7 @@ $special-red: #ee2737;
         width: 19%;
         color: black;
         font-size: 40rem;
-        font-weight: 100;
+        font-weight: 400;
         border-bottom: 2rem $special-red solid;
         @include media("<=tablet"){
         width:55%;
@@ -21,14 +21,15 @@ $special-red: #ee2737;
     }
     h2{
         font-size: 26rem;
-        font-weight: 100;
+        font-weight: 600;
         @include media("<=tablet"){
         font-size: 20rem;
     }
     }
     p{
         font-size: 14rem;
-        font-weight: 100;
+        font-weight: 400;
+        line-height: 1.5;
         @include media("<=tablet"){
         font-size: 12rem;
     }
@@ -84,9 +85,11 @@ $special-red: #ee2737;
         font-weight: 100;
         font-size: 18rem;
         padding-left: 20rem;
+        margin: 0 0 50rem;
         @include media("<=tablet"){
             color: black;
             font-size: 14rem;
+            margin: 0 0 20rem
         }
     }
     a{
