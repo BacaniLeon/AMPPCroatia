@@ -89,7 +89,7 @@ $special-red: #ee2737;
         display: flex;
         justify-content:center;
         gap: 20rem;
-        margin: 0 auto;
+        margin: 20rem auto;
         @include media("<=tablet"){
             gap: 50rem;
         }
@@ -108,14 +108,12 @@ $special-red: #ee2737;
         display: flex;
         color: white;
         font-size: 17rem;
-        font-family: Arial, Helvetica, sans-serif;
         
     }
     a{
         font-size: 27rem;
         text-decoration:none;
         color:bisque;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         
     }

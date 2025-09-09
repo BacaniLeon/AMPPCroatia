@@ -1,13 +1,14 @@
 @import '../../../node_modules/include-media/dist/_include-media.scss';
+
 $special-red: #ee2737;
 
 html{
     
     scroll-behavior: smooth;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: 'Zodiak', sans-serif;
     body{
         margin:0;
-        font-family: "Nunito Sans", sans-serif;
+        font-family: 'Zodiak', sans-serif;
     }
 
     
@@ -16,7 +17,7 @@ html{
 h1{
     color: white;
     font-weight: 200;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: 'Zodiak', sans-serif;
     margin: 0;
     font-size: 60rem;
     font-weight: bold;
@@ -25,14 +26,14 @@ h1{
 h4{
     color: #2fc1ff;
     font-weight: 200;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: 'Zodiak', sans-serif;
     font-size: 16rem;
     margin: 0 0 15rem;
     font-weight: bold;
 }
 
 a{
-    font-family: "Nunito Sans", sans-serif;
+    font-family: 'Zodiak', sans-serif;
     font-weight: bold;
 }
 
