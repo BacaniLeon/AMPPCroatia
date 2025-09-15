@@ -5,12 +5,11 @@
   <div class="courses_and_certifications_intro_banner">
           <div class="slide-inner">
             <img class="img__ForHomePage" src="https://a.storyblok.com/f/286902983623857/1600x600/fa1457e9ca/courses_and_certifications.jpg"/>
+                <h1>AMPP - Courses and Certifications</h1>
           </div>
   </div>
 
     <div class="courses_and_certifications_text">
-      <h1>AMPP - Courses and Certifications</h1>
-
       <p>AMPP has developed several courses on what corrosion is, how to prevent it through choice of materials, cathodic protection and protective coatings (coating).</p>
 
       <p>The courses are aimed at different industrial sectors such as <span> Naval </span>, <span> Oil&Gas </span>, <span> Civil </span>, <span> Nuclear </span>, etc.</p>

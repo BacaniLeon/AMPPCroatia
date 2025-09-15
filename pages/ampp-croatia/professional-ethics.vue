@@ -5,13 +5,12 @@
   <div class="professional_ethics_intro_banner">
           <div class="slide-inner">
             <img class="img__ForHomePage" src="https://a.storyblok.com/f/286902983623857/1600x600/3e9689c3c8/professional_ethics_withtext.jpg"/>
+             <h1>Professional Ethics</h1>
           </div>
   </div>
 
     <div class="professiona_ethics_text">
-      <h1>Professional Ethics</h1>
-
-
+    
       <h2>In recent years, AMPP has raised great awareness of the professional code of ethics, i.e. the responsibilities of ethical-social behavior as well as the principles that individual inspectors must adhere to during their work activity.</h2>
 
       <h3>On the subject, the following were created</h3>

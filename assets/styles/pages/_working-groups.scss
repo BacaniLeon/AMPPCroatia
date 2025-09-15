@@ -25,7 +25,7 @@ $special-red: #ee2737;
         font-weight: 600;
         color: $special-red;
         @include media("<=tablet"){
-            font-size: 16rem;
+            font-size: 18rem;
         }
     }
     h3{
@@ -36,17 +36,17 @@ $special-red: #ee2737;
         text-align: center;
         font-weight: 700;
         @include media("<=tablet"){
-            font-size: 12rem;
+            font-size: 14rem;
             padding: 20rem 40rem;
         }
     }
     p{
-        font-size: 13rem;
+        font-size: 16rem;
         line-height: 1.5;
         font-weight: 400;
         color: black;
         @include media("<=tablet"){
-            font-size: 9rem;
+            font-size: 13rem;
         }
     }
     span{

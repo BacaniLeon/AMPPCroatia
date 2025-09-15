@@ -5,6 +5,7 @@
   <div class="ampp_croatia_chapter_intro_banner">
           <div class="slide-inner">
             <img class="img__ForHomePage" src="https://a.storyblok.com/f/286902983623857/1600x600/527acd0d1d/banner_photo2.jpg"/>
+            <h1>AMPP CROATIA CHAPTER</h1>
           </div>
   </div>
 
