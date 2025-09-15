@@ -45,7 +45,7 @@ $special-red: #ee2737;
         margin: 10rem 0 30rem;
         @include media("<=tablet"){
         width:95%;
-        font-size: 16rem;
+        font-size: 30rem;
         }
     }
     p{
@@ -54,7 +54,7 @@ $special-red: #ee2737;
         font-weight: 400;
         @include media("<=tablet"){
             display: block;
-            font-size: 8rem;
+            font-size: 12rem;
         }
     }
     span{
