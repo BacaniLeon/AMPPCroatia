@@ -16,25 +16,25 @@
       <ul class="footer_about">
           <li class="footer_title">AMPP Croatia</li>
           <li>
-            <NuxtLink to="/" class="footer_link">AMPP Croatia Chapter</NuxtLink>
+            <NuxtLink to="/ampp-croatia/ampp-croatia-chapter" class="footer_link">AMPP Croatia Chapter</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/" class="footer_link">Our Mission</NuxtLink>
+            <NuxtLink to="/ampp-croatia/our-mission" class="footer_link">Our Mission</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/" class="footer_link">Board</NuxtLink>
+            <NuxtLink to="/ampp-croatia/board" class="footer_link">Board</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/" class="footer_link">Professional Ethics</NuxtLink>
+            <NuxtLink to="/ampp-croatia/professional-ethics" class="footer_link">Professional Ethics</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/" class="footer_link">Courses and Certifications</NuxtLink>
+            <NuxtLink to="/ampp-croatia/courses-and-certifications" class="footer_link">Courses and Certifications</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/" class="footer_link">Awards</NuxtLink>
+            <NuxtLink to="/ampp-croatia/awards" class="footer_link">Awards</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/" class="footer_link">Members Area</NuxtLink>
+            <NuxtLink to="/ampp-croatia/members" class="footer_link">Members Area</NuxtLink>
           </li>
       </ul>
     </div>

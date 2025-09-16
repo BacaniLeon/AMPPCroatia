@@ -18,7 +18,6 @@
     <h2>{{ board_member.title }}</h2>
     <h1>{{ board_member.name }}</h1>
     <p>{{ board_member.city }}</p>
-    <NuxtLink :to="board_member.to" class="find_out_more_button">{{ board_member.company }}</NuxtLink>
   </div>
   </div>
   
@@ -80,10 +79,20 @@ const board_members = [
   {
      photo: "https://a.storyblok.com/f/286902983623857/404x325/2b171c682e/ampp_croatia_croatia.png",
      title: "Chairman",
-     name: "John Doe",
+     name: "Kasra Miri",
      city: "Zagreb",
-     to: "https://www.eninco-engineering.hr",
-     company: "Eninco Engineering"
+   },
+   {
+     photo: "https://a.storyblok.com/f/286902983623857/404x325/2b171c682e/ampp_croatia_croatia.png",
+     title: "Vice Chair",
+     name: "Goran Omid Kolarac",
+     city: "Zagreb",
+   },
+   {
+     photo: "https://a.storyblok.com/f/286902983623857/404x325/2b171c682e/ampp_croatia_croatia.png",
+     title: "Treasurer",
+     name: "Benjamin David Lapple",
+     city: "Zagreb",
    },
 ];
 
